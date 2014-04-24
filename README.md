@@ -8,7 +8,7 @@ Getting Started
 
 *Step 1:* Clone this repository
 
-    $ git clone https://bitbucket.org/phretor/memory-errors-lab
+    $ git clone https://github.com/phretor/memory-errors-lab
 
 *Step 2:* Install [VirtualBox](https://www.virtualbox.org/) according to your host
 operating system's recommended procedure.
