@@ -19,7 +19,7 @@ here](http://www.vagrantup.com/downloads)).
 *Step 4:* Start the virtual machine:
 
     $ cd memory-errors-lab/linux32
-    $ vagrant up                    # go have a cup of tea :-)
+    $ vagrant up --provision              # go have a cup of tea :-)
 
 *Step 5:* Start hacking:
 
