@@ -14,3 +14,4 @@ sudo -u vagrant wget -O ~vagrant/.gdbinit 'https://raw.githubusercontent.com/gdb
 
 # disable ASRL
 echo "kernel.randomize_va_space=0" >> /etc/sysctl.conf
+sysctl -p /etc/sysctl.conf
