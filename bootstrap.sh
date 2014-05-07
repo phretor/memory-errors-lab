@@ -13,4 +13,5 @@ sudo -u vagrant wget -O ~vagrant/.spf-tmp 'https://j.mp/spf13-vim3' && sudo -u v
 sudo -u vagrant wget -O ~vagrant/.gdbinit 'https://raw.githubusercontent.com/gdbinit/Gdbinit/master/gdbinit'
 
 # disable ASRL
-sudo echo 0 > /proc/sys/kernel/randomize_va_space
+echo "kernel.randomize_va_space=0" >> /etc/sysctl.conf
+sysctl -p /etc/sysctl.conf
