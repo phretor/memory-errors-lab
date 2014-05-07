@@ -42,6 +42,11 @@ GCC Options
 
 When compiling, the following options are recommended:
 
-    -f no-stack-protector           # disables stack-smashing protection
-    -z execstack                    # enables executable stack
-    -m preferred-stack-boundary=2   # aligns memory allocation to 2^2 bytes
+    -fno-stack-protector           # disables stack-smashing protection
+    -z execstack                   # enables executable stack
+    -mpreferred-stack-boundary=2   # aligns memory allocation to 2^2 bytes
+
+Since the `-mpreferred-stack-boundary=2` option affects how the machine
+allocates memory on the stack, it also affects the displacement calculation
+when preparing format string exploits. Therefore, disabling this option is
+recommended when practicing with format string bugs.
