@@ -4,7 +4,7 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-    config.vm.box = "debian/jessie64"
+    config.vm.box = "precise32"
 
     config.vm.synced_folder "../memory-errors/", "/home/vagrant/memory-errors",
         owner: "vagrant", group: "vagrant"
