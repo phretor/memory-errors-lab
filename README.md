@@ -8,7 +8,7 @@ Getting Started
 
 *Step 1:* Clone this repository
 
-    $ git clone https://github.com/phretor/memory-errors-lab.git
+    $ git clone https://github.com/ocean1/memory-errors-lab.git
 
 *Step 2:* Install [VirtualBox](https://www.virtualbox.org/) according to your host
 operating system's recommended procedure.
@@ -18,8 +18,16 @@ here](http://www.vagrantup.com/downloads)).
 
 *Step 4:* Start the virtual machine:
 
-    $ cd memory-errors-lab/linux32
-    $ vagrant up              # go have a cup of tea :-)
+    $ cd memory-errors-lab/linux64
+    $ cd linux64
+    $ vagrant plugin install vagrant-vbguest
+    $ vagrant up
+
+If you want to skip the vbguest plugin installation, you'll have to setup
+the vbox guest additions yourself after a "vagrant up", you'll then need to halt and start again the machine:
+
+    $ vagrant halt
+    $ vagrant up
 
 *Step 5:* Start hacking:
 
@@ -45,6 +53,7 @@ When compiling, the following options are recommended:
     -fno-stack-protector           # disables stack-smashing protection
     -z execstack                   # enables executable stack
     -mpreferred-stack-boundary=2   # aligns memory allocation to 2^2 bytes
+    -m32                           # compile as 32-bitx86 elf file
 
 Since the `-mpreferred-stack-boundary=2` option affects how the machine
 allocates memory on the stack, it also affects the displacement calculation
