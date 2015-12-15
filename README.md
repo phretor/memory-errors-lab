@@ -18,7 +18,6 @@ operating system's recommended procedure.
 *Step 4:* Start the virtual machine:
 
     $ cd memory-errors-lab/linux64
-    $ cd linux64
     $ vagrant plugin install vagrant-vbguest
     $ vagrant up
 
