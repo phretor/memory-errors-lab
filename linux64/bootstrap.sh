@@ -42,7 +42,7 @@ sudo -u vagrant wget -O ~vagrant/.gdbinit 'https://raw.githubusercontent.com/gdb
 sudo pip2 uninstall capstone -y
 
 # Install correct capstone
-cd ~/tools/capstone/bindings/python
+cd /home/vagrant/capstone/bindings/python
 sudo python setup.py install
 
 # disable ASRL
