@@ -13,7 +13,7 @@ Getting Started
 *Step 2:* Install [VirtualBox](https://www.virtualbox.org/) according to your host
 operating system's recommended procedure.
 
-*Step 3:* Install Vagrant ([instructions here](http://www.vagrantup.com/downloads)).
+*Step 3:* Install Vagrant ([instructions here](http://www.vagrantup.com/downloads.html)).
 
 *Step 4:* Start the virtual machine:
 
